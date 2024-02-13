@@ -1,0 +1,159 @@
+/*
+background purple: #540B51
+background ivory: #F3EAE2
+button blue: #4285F4
+titles black: #191817
+paragraph black: #000000
+paragraph yellow: #ECB12F
+links blue: #2E71A6
+footer links grey: #454245
+*/
+
+:root {
+    --background-purple: #540B51;
+    --background-ivory: #F3EAE2;
+    --button-blue: #4285F4;
+    --titles-black: #191817;
+    --paragraph-black: #000000;
+    --paragraph-yellow: #ECB12F;
+    --links-blue: #2E71A6;
+    --footer-links-grey: #454245;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-emphasis {
+    color: var(--background-purple);
+}
+.text-muted {
+    color: var(--footer-links-grey);
+    font-weight: 100;
+}
+.list-unstyled {
+    list-style: none;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.button {
+    width: 100%;
+    height: 40px;
+    margin: 0.25rem 0;
+    border: 1px white solid;
+    border-radius: 2px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.button-white {
+    color: var(--background-purple);
+    background-color: white;
+}
+.button-blue {
+    color: var(--background-purple);
+    background-color: var(--button-blue);
+    border-color: var(--button-blue);
+}
+.button-outline {
+    color: white;
+    background: rgba(0,0,0,0.0);
+}
+/* normal styling should be for less than 768px */
+/* start header bar stuff */
+nav {
+    min-height: 60px;
+    background-color: var(--background-purple);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+#logo-and-nav {
+ margin-top: 1rem;
+}
+#header-logo {
+    max-height: 24px;
+    margin-left: 1rem;
+}
+#main-nav {
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+#main-nav li a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+#sign-in-search {
+    margin-right: 1rem;
+    margin-top: 1rem;
+}
+#sign-in-search > button {
+    background-color: var(--background-purple);
+    border: none;
+}
+.hidden {
+    display: none !important;
+}
+img {
+    max-width: 100%;
+
+
+
+
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Your Font Family', sans-serif;
+  }
+  
+  /* Navbar */
+  nav > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  nav ul {
+    display: none; /* Hide on mobile */
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  header button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #4A154B; /* Slack's primary color */
+    color: white;
+    border-radius: 5px;
+  }
+  
+  /* Media Query for larger screens */
+  @media (min-width: 768px) {
+    nav ul {
+      display: flex; /* Show on larger screens */
+    }
+  
+    /* Additional styles for larger screens */
+  }
+  
